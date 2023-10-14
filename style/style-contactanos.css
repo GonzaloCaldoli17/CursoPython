@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    background-image: url('../img/692043.jpg');
+}
+
+.logo-img{
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    margin-top: 0;
+    justify-content: center;
+   position: relative;
+   bottom: 10px;
+}
+
+.navbar {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    text-align: center; /* Alinear el contenido al centro */
+    padding: 10px 0; /* Espaciado interno en la parte superior e inferior */
+    width: 100%;
+    height: 8.2%;
+    position: fixed; /* Fijar la barra de navegación en la parte superior */
+    top: 0;
+    left: 0; /* Asegurarse de que esté en la parte superior */
+}
+
+.nav-list {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.nav-item {
+    margin-right: 20px; /* Espaciado entre elementos */
+   
+}
+
+.nav-item:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+.nav-item a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 28px; /* Tamaño de fuente */
+}
+
+.nav-item a:hover {
+    color: gray;/* Subrayar el enlace al pasar el ratón */
+}
+
+
+
+
+.form-register {
+    width: 400px;
+    background: #222222;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #131010;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #b31919;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #c51f1f;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style/style-contactanos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymbro</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="index.html"><img src="img/logo.jpeg" alt="logo" class="logo-img"></a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Inicio</a></li>
+            <li class="nav-item"><a href="rutinas.html">Rutinas</a></li>
+            <li class="nav-item"><a href="Contactanos.html">Contactanos</a></li>
+            <li class="nav-item"><a href="entrenadores.html" >Entrenadores</a></li>
+            
+        </ul>
+    </nav>
+
+    <section class="form-register">
+        <h4>Contactanos!</h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre completo">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su mensaje">
+        <input type="radio" id="elegir" name="eleccion" value="elegir">
+        <label for="elegir">Soy socio</label>
+        <input type="radio" id="no-elegir" name="eleccion" value="no-elegir">
+        <label for="no-elegir">No soy socio</label>
+
+        <input class="botons" type="button" value="Enviar" onclick="validarFormulario()">
+       
+      </section>
+    
+      <script src="forms.js"></script>
+</body>
+</html>

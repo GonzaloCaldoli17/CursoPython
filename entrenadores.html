@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="./style/style-entrenadores.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymbro</title>
+    
+</head>
+<body>
+
+    <div>
+        <nav class="navbar">
+            <a href="index.html"><img src="img/logo.jpeg" alt="logo" class="logo-img"></a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Inicio</a></li>
+                <li class="nav-item"><a href="rutinas.html">Rutinas</a></li>
+                <li class="nav-item"><a href="Contactanos.html">Contactanos</a></li>
+                <li class="nav-item"><a href="entrenadores.html" >Entrenadores</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+
+     
+     
+    <div class = "container">
+        <h1 class="entrenadores">Entrenadores disponibles:</h1>
+        <div class = "card">
+          <div class = "card-head">
+                <a href = "#"><i class = "fas fa-envelope"></i> Email</a>
+                <div class = "user-image">
+                    <img src = "img/20.jpg" alt = "">
+                </div>
+            </div>
+
+            <div class = "card-body">
+                <div class = "user-post-address">
+                    <div>
+                        <span>9545</span><span>Street Address</span>
+                    </div>
+                    <div>
+                        <span>20054</span><span>Postcode</span>
+                    </div>
+                    <div>
+                        <span>Avenida Maipu</span><span>Nombre de la calle</span>
+                    </div>
+                </div>
+
+                <div class = "user-name">
+                    <span class = "user-name-title">Mr.</span>
+                    <span class = "user-name-full">Helen Anttila,</span>
+                    <span class = "user-age">34</span>
+                </div>
+
+                <div class = "user-location-address">
+                    <span>Kouvola, Satakunta, Finland</span>
+                </div>
+            </div>
+
+            <div class = "card-foot">
+                <div class = "user-contact-info">
+                    <span>
+                        <i class = "fas fa-phone"></i> 07-567-990
+                    </span>
+                    <span>
+                        <i class = "fa-solid fa-mobile-button"></i> 044-391-36-63
+                    </span>
+                </div>
+            </div> 
+        </div>
+
+        <button type = "button" id = "generate-btn">Buscar un nuevo entrenador</button>
+    </div>
+    
+  
+    <script src="api.js"></script>
+</body>
+</html>
