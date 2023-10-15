@@ -20,17 +20,24 @@
     </nav>
 
     <section class="form-register">
+        <form>
         <h4>Contactanos!</h4>
+        <fieldset class="datos">
         <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre completo">
         <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su mensaje">
-        <input type="radio" id="elegir" name="eleccion" value="elegir">
-        <label for="elegir">Soy socio</label>
-        <input type="radio" id="no-elegir" name="eleccion" value="no-elegir">
-        <label for="no-elegir">No soy socio</label>
+        </fieldset>
+        <fieldset class="mensaje">
+        <input class="controls" type="text" name="text" id="text" placeholder="Ingrese su mensaje">
+        </fieldset>
+        <fieldset class="choice">
+        <input type="radio" id="socio" name="eleccion" value="socio">
+        <label for="socio">Soy socio</label>
+        <input type="radio" id="no socio" name="eleccion" value="No socio">
+        <label for="no socio">No soy socio</label>
+        </fieldset>
 
-        <input class="botons" type="button" value="Enviar" onclick="validarFormulario()">
-       
+        <button type="submit" class="botons">Enviar</button>
+    </form>
       </section>
     
       <script src="forms.js"></script>
