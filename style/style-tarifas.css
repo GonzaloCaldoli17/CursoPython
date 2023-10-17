@@ -15,14 +15,14 @@ body{
 }
 
 .navbar {
-    background-color: #0f0f0f; /* Color de fondo de la barra de navegación */
-    text-align: center; /* Alinear el contenido al centro */
-    padding: 10px 0; /* Espaciado interno en la parte superior e inferior */
+    background-color: #0f0f0f; 
+    text-align: center; 
+    padding: 10px 0; 
     width: 100%;
     height: 6%;
-    position: fixed; /* Fijar la barra de navegación en la parte superior */
+    position: fixed; 
     top: 0;
-    left: 0; /* Asegurarse de que esté en la parte superior */
+    left: 0; 
 }
 
 .nav-list {
@@ -36,23 +36,23 @@ body{
 }
 
 .nav-item {
-    margin-right: 20px; /* Espaciado entre elementos */
+    margin-right: 20px;
    
 }
 
 .nav-item:last-child {
-    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+    margin-right: 0; 
 }
 
 .nav-item a {
-    text-decoration: none; /* Eliminar subrayado de los enlaces */
-    color: #fff; /* Color del texto de los enlaces */
-    font-weight: bold; /* Texto en negrita */
-    font-size: 28px; /* Tamaño de fuente */
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
+    font-size: 28px; 
 }
 
 .nav-item a:hover {
-    color: gray;/* Subrayar el enlace al pasar el ratón */
+    color: gray;
 }
 
 
@@ -65,7 +65,7 @@ body{
     align-content: center;
    }
    
-   /*Columnas*/
+
    
    .precio-col {
     display:inline-block;
@@ -89,7 +89,7 @@ body{
     }
    }
    
-   /*Headers*/
+  
    
    .precio-col-header {
     background-color:#333;
@@ -117,7 +117,7 @@ body{
     margin-bottom:0
    }
    
-   /*Características*/
+
    
    .precio-col-features {
     padding: 0 20px 20px 20px
@@ -135,7 +135,7 @@ body{
     border-top:none
    }
    
-   /*Comprar*/
+
    
    .precio-col-comprar {
     padding:10px;

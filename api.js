@@ -10,12 +10,11 @@ class RandomUser{
     }
 
     static renderUserData(data){
-        // console.log(data);
         let user = data.results[0];
         let cardElem = document.querySelector('.card');
         cardElem.innerHTML = `
         <div class = "card-head">
-            <a href = "mailto:${user.email}"><i class = "fas fa-envelope"></i> Email</a>
+            <a href = "${user.email}"><i class = "fas fa-envelope"></i></a>
             <div class = "user-image">
                 <img src = "${user.picture.large}" alt = "">
             </div>
@@ -42,11 +41,9 @@ class RandomUser{
         <div class = "card-foot">
             <div class = "user-contact-info">
                 <span>
-                    <i class = "fas fa-phone"></i> ${user.phone}
+                <i class="fa-solid fa-phone" style="color: #cb2525; margin-left:110px;"></i> ${user.phone}
                 </span>
-                <span>
-                    <i class = "fa-solid fa-mobile-button"></i> ${user.cell}
-                </span>
+                
             </div>
         </div>
         `;
