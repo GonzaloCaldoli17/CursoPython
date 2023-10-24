@@ -87,6 +87,7 @@ body{
     .precio-col:last-child {
     margin-right:0
     }
+    
    }
    
   
@@ -175,3 +176,25 @@ body{
    .fa-solid{
     margin-right: 10px;
    }
+
+   @media (max-width:412px){
+    .nav-item a {
+        font-size: 15px;
+      }
+      .nav-list{
+        align-items: end;
+        justify-content: end;
+      }
+      .logo-img{
+        margin-top: -0.4rem;
+        width: 50px;
+        height: 50px;
+      }
+      #tabla-precios{
+        flex-direction: column;
+      }
+      .navbar{
+        height: 1rem;
+      }
+   }
+

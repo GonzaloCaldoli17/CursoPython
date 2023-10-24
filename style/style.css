@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
 }
 
 .logo-img{
@@ -12,7 +13,7 @@
     margin-right: 10px;
     width: 80px;
     height: 80px;
-    margin-top: -1%;
+    margin-top: -1.1%;
    position: absolute;
    align-items: start;
    display: flex;
@@ -20,7 +21,7 @@
 }
 
 .navbar {
-    background-color: #0f0f0f; 
+    background-color: #0F0F0F; 
     text-align: center; 
     padding: 10px 0; 
     width: 100%;
@@ -29,6 +30,7 @@
     left: 0; 
     overflow: hidden;
     position: sticky;
+    backdrop-filter: blur(10px);
 }
 
 .nav-list {
@@ -63,31 +65,112 @@
 
 
 section{
-    min-height: 100vh;
-    padding: 0 9%;
-    padding-top: 7.5rem;
-    padding-bottom: 2rem;
+min-height: 100vh;
+padding: 0 9%;
+padding-top: 7.5rem;
+padding-bottom: 2rem;
 }
 
-.sectioni{
+.sectioni {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
-}
-
-.sectioni .img img{
-    width: 40vw;
-    margin-right: -10%;
-    
-}
-
-.sectioni .txt h3{
-    font-size: 5.5rem;
-    color: #fff;
+    background-image: url('../img/fongo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.678);
+  }
+  
+  .sectioni .txt {
+    flex: 1;
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sectioni .txt h3 {
+    font-size: 5rem;
+    color: #d81c1c;
     text-transform: uppercase;
-}
+    width: 80rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sectioni .txt p {
+    font-size: 30px;
+    font-weight: 400;
+    width: 45rem;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .sectioni .btn {
+    text-decoration: none;
+    font-size: 30px;
+    color: red;
+    transition: color 0.3s; /* Agregué "s" a la duración de la transición */
+    margin-right: 20px;
+    border: 2px solid white;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+  
+  .btn:hover {
+    color: white;
+  }
 
-.sectioni .txt p{
-    color: #fff;
-}
+  .hamburguesa{
+    display: none;
+  }
+
+  
+  @media  (max-width: 768px) {
+    .sectioni .txt h3{
+      width: 35rem;
+    }
+    .sectioni .txt p{
+      width: 40rem;
+    }
+    .logo-img{
+      margin-top: -2.7%;
+    }
+  } 
+
+  @media (max-width: 412px){
+    .nav-item a {
+      font-size: 15px;
+    }
+    .nav-list{
+      align-items: end;
+      justify-content: end;
+    }
+    .logo-img{
+      margin-top: -1.2rem;
+      width: 60px;
+      height: 60px;
+    }
+
+    .sectioni .txt h3{
+      width: 20rem;
+      font-size: 40px;
+    }
+    .sectioni .txt p{
+      width: 20rem;
+      font-size: 20px;
+    }
+    .sectioni .btn{
+      margin-bottom: 10px;
+      display: flex;
+      
+    }
+  }
+    
+  
