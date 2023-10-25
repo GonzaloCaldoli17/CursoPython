@@ -134,16 +134,17 @@ body{
     width: 100%;
     height: 100%;
 }
+
 .user-image{
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: 90px;
+    left: 25%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 10%;
     overflow: hidden;
 }
 
@@ -177,12 +178,16 @@ body{
     margin-top: 0.7rem;
 }
 .card-body{
-    padding: 0 3rem 3.8rem 3rem;
+    padding: 0 3rem 3.5rem 3rem;
 }
-.user-name{
-    padding: 3rem 0 1.6rem 0;
+.user-name {
+    padding: 4rem 0 0 20rem; /* Ajusta los valores de padding según sea necesario */
     font-size: 1.9rem;
     color: white;
+    text-align: right; /* Ajusta el valor de text-align para alinear a la izquierda */
+    position: relative; /* Permite controlar la posición del elemento */
+    top:-10rem;
+    right: 2rem;
 }
 .user-name-title{
     font-weight: 700;
@@ -297,6 +302,6 @@ body{
    }
 
 .entrenadores{
-    margin-bottom: 100px;
-    color: rgb(252, 252, 252);
+    margin-bottom: 10px;
+    color: rgb(255, 252, 252);
 }

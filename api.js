@@ -9,44 +9,48 @@ class RandomUser{
         .catch(error => alert(error));
     }
 
-    static renderUserData(data){
+    static renderUserData(data) {
         let user = data.results[0];
         let cardElem = document.querySelector('.card');
         cardElem.innerHTML = `
-        <div class = "card-head">
-            <a href = "${user.email}"><i class = "fas fa-envelope"></i></a>
-            <div class = "user-image">
-                <img src = "${user.picture.large}" alt = "">
-            </div>
+        <div class="card-head">
+        <div class="user-image">
+            <img src="${user.picture.large}" alt="">
         </div>
-
-        <div class = "card-body">
-            <div class = "user-post-address">
-                <div>
-                    <span>Avenida Maipu 91342</span><span>Direccion</span>
+    </div>
+    <div class="card-body">
+        <div class="user-name" style="text-align: center;">
+            <span class="user-name-title">${user.name.title}.</span>
+            <br>
+            <span class="user-name-full">${user.name.first} ${user.name.last}</span>
+        </div>
+    
+            <div class="user-address" style="text-align: center;">
+                <span style="color: red;">Direccion: </span>
+                <div class="user-post-address">
+                    <span style="color: white;">Avenida Maipu 91342</span>
                 </div>
             </div>
-
-            <div class = "user-name">
-                <span class = "user-name-title">${user.name.title}.</span>
-                <span class = "user-name-full">${user.name.first} ${user.name.last},</span>
-                <span class = "user-age">${user.dob.age}</span>
-            </div>
-
-            <div class = "user-location-address">
-                <span>Cardio, Corssfit, Boxeo</span>
+    
+            <div class="user-skills" style="text-align: center; color: red;">
+                <span>Habilidades:</span>
+                <div class="user-location-address">
+                    <span>Cardio, Crossfit, Boxeo</span>
+                </div>
             </div>
         </div>
-
-        <div class = "card-foot">
-            <div class = "user-contact-info">
+    
+        <div class="card-foot">
+            <div class="user-contact-info" style="text-align: center;">
                 <span>
-                <i class="fa-solid fa-phone" style="color: #cb2525; margin-left:110px;"></i> ${user.phone}
+                    <i class="fa-solid fa-phone" style="color: #cb2525;"></i> ${user.phone}
                 </span>
-                
+                <br>
+                <span>
+                    <i class="fa-solid fa-envelope" style="color: #cb2525;"></i> ${user.email}
+                </span>
             </div>
-        </div>
-        `;
+        </div>`;
     }
 }
 
@@ -56,4 +60,3 @@ document.getElementById('generate-btn').addEventListener('click', () => {
 });
 
 RandomUser.fetchFromAPI();
-
